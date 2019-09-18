@@ -55,9 +55,9 @@ PeerOrgs:
     # ---------------------------------------------------------------------------
     CA:
        # Hostname: ca # implicitly ca.org1.example.com
-        Country: JO
-        Province: Amman
-        Locality: Amman
+        Country: UAE
+        Province: Dubai
+        Locality: Dubai
         OrganizationalUnit: OPN
         #StreetAddress: 
         #PostalCode: postalCode for org # default nil
@@ -116,7 +116,8 @@ PeerOrgs:
       # SANS:
       #   - "{{.Hostname}}.alt.{{.Domain}}"    
       SANS:
-          - 158.176.67.249
+          - 158.176.67.250
+          - "{{.Hostname}}-arabae"
 
     Users:
       Count: 1
@@ -136,6 +137,7 @@ PeerOrgs:
       Count: 2
       SANS:
           - 158.176.67.247
+          - "{{.Hostname}}-arabjo"
     Users:
       Count: 1
 
@@ -147,7 +149,7 @@ PeerOrgs:
     EnableNodeOUs: true
     CA:
        # Hostname: ca # implicitly ca.org1.example.com
-        Country: JO
+        Country: JORDAN
         Province: Amman
         Locality: Amman
         OrganizationalUnit: OPN    
